@@ -3,3 +3,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* 500 600 700 */
+
+@layer base {
+    @font-face {
+        font-family: "Spartan";
+        font-weight: 700;
+        src: url("./fonts/Spartan-Bold.ttf"), format("ttf");
+    }
+    @font-face {
+        font-family: "Spartan";
+        font-weight: 500;
+        src: url("./fonts/Spartan-Medium.ttf"), format("ttf");
+    }
+    @font-face {
+        font-family: "Spartan";
+        font-weight: 600;
+        src: url("./fonts/Spartan-SemiBold.ttf"), format("ttf");
+    }
+}

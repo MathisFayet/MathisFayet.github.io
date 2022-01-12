@@ -1,10 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import FirstBlock from "./Compenent/FirstBlock"
+import DisplayVideo from "./Compenent/DisplayVideo"
 
 const App = () => {
   return (
-    <div className="bg-blue-300">
-      <h1 className="flex justify-center "> new project</h1>
-    </div>
+    <>
+      <Router>
+          <Routes>
+            <Route path='/' element={<FirstBlock/>}/>
+            <Route path='video' element={<DisplayVideo/>}/>
+            {/* Faire les autres path pour le hamburger */}
+          </Routes>
+      </Router> 
+    </>
   );
 }
 export default App;
