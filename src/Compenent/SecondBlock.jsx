@@ -8,15 +8,15 @@ const SecondBlock = () => {
         <>
         {/* ----- Troisieme partie ------*/}
             <div>
-                <img className="h-full w-full" src={iphoneImage2}></img>
+                <img className="" src={iphoneImage2}></img>
             </div>
 
         {/* ----- Quatrieme partie ------*/}
-            <div className="m-12">
+            <div className="m-10">
                 <div className="flex">
-                    <h1 className="font-bold uppercase font-spartan text-2l mr-3">A b o u t</h1>
-                    <h1 className="font-bold uppercase font-spartan text-2l mr-3">o u r</h1>
-                    <h1 className="font-bold uppercase font-spartan text-2l">f u r n i t u r e</h1>
+                    <h1 className="font-bold uppercase font-spartan text-base mr-3">A b o u t</h1>
+                    <h1 className="font-bold uppercase font-spartan text-base mr-3">o u r</h1>
+                    <h1 className="font-bold uppercase font-spartan text-base">f u r n i t u r e</h1>
                 </div>
                 <p className="text-gray-300 mt-4 font-sparta font-medium text-base ">
                     Our multifunctional collection blends design and function to suit your individual taste. Make each
@@ -27,7 +27,7 @@ const SecondBlock = () => {
             </div>
         {/* ----- Cinquieme partie ------*/}
             <div>
-                <img className="h-full w-full" src={iphoneImage3}></img>
+                <img className="" src={iphoneImage3}></img>
             </div>
         </>
     )
