@@ -3,11 +3,15 @@ import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 
 import hamburgerIcon from "../images/icon-hamburger.svg"
-import iphoneImage1 from "../images/mobile-image-hero-1.jpg"
 import arrowIcon from "../images/icon-arrow.svg"
 import SecondBlock from "./SecondBlock"
 import angleRightIcon from "../images/icon-angle-right.svg"
 import angleLeftIcon from "../images/icon-angle-left.svg"
+
+import iphoneImage1 from "../images/mobile-image-hero-1.jpg"
+import iphoneImage2 from "../images/image-about-dark.jpg"
+
+import desktopImage1 from "../images/desktop-image-hero-1.jpg"
 
 const FirstBlock = () => {
     
@@ -25,14 +29,15 @@ const FirstBlock = () => {
     }
     return (
         <>
+        <ContainerImage className="">
         {
             isOpen ?
                 <div className="position: absolute">
                     <div className="flex mt-14">
-                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3 ml-24">home</h1>
-                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3">shop</h1>
-                        <h1 onClick={navigateVideo} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3">about</h1>
-                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs">contact</h1>
+                        <h1 onClick={navigateVideo} className="font-spartan cursor-default	hover:text-yellow-400 font-bold text-white text-xs mr-3 ml-24">home</h1>
+                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-green-400 font-bold text-white text-xs mr-3">shop</h1>
+                        <h1 onClick={navigateVideo} className="font-spartan cursor-default	hover:text-red-400 font-bold text-white text-xs mr-3">about</h1>
+                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-blue-400 font-bold text-white text-xs">contact</h1>
                     </div>
                 </div>
             : null
@@ -41,10 +46,13 @@ const FirstBlock = () => {
             <BackgroundImage>
                 <div className="position: absolute">
                     <div className="flex p-8 ">
-                        <button onClick={printMenu}><img className={`transition duration-300 ease-in-out transform hover:scale-y-125 mt-4 ${isOpen ? 'mt-6' : ''}`} src={hamburgerIcon} /></button>
-                        <div className=" ">
-
-                        <h1 className={`font-spartan text-2xl text-white font-bold mt-3 ml-28 ${isOpen ? 'hidden' : ''}`}>room</h1>
+                        <ContainerMenu>
+                            <button onClick={printMenu}><img className={`transition duration-300 ease-in-out transform hover:scale-y-125 mt-4 ${isOpen ? 'mt-6' : ''}`} src={hamburgerIcon} /></button>
+                        </ContainerMenu>
+                        <div>
+                        <ContainerTitle>
+                            <h1 className={`font-spartan text-2xl text-white font-bold mt-3 ml-28 ${isOpen ? 'hidden' : ''}`}>room</h1>
+                        </ContainerTitle>
                         </div>
                     </div>
                 </div>
@@ -67,14 +75,35 @@ const FirstBlock = () => {
                 </div>
             </div>
             <SecondBlock/>
+            </ContainerImage>
         </>
     ) 
 }
 export default FirstBlock;
 
 const BackgroundImage = styled.section`
-    background-image: url(${iphoneImage1});
+@media (min-width: 375px) {
+    background-image: url(${desktopImage1});
+}
+background-image: url(${iphoneImage1});
     width: 375px;
     height: 360px;
     background-repeat: no-repeat
+`;
+
+const ContainerMenu = styled.section`
+@media (min-width: 1440px) {
+    display: none;
+}
+`;
+
+const ContainerTitle = styled.section`
+@media (min-width: 1440px) {
+    margin-left: -100px;
+}
+`
+
+const ContainerImage = styled.section`
+@media (min-width: 1440px) {
+}
 `;
