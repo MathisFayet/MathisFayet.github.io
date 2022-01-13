@@ -29,10 +29,10 @@ const FirstBlock = () => {
             isOpen ?
                 <div className="position: absolute">
                     <div className="flex mt-14">
-                        <h1 onClick={navigateForms} className="font-spartan hover:text-gray-400 font-bold text-white text-xs mr-3 ml-24">home</h1>
-                        <h1 onClick={navigateForms} className="font-spartan hover:text-gray-400 font-bold text-white text-xs mr-3">shop</h1>
-                        <h1 onClick={navigateVideo} className="font-spartan hover:text-gray-400 font-bold text-white text-xs mr-3">about</h1>
-                        <h1 onClick={navigateForms} className="font-spartan hover:text-gray-400 font-bold text-white text-xs">contact</h1>
+                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3 ml-24">home</h1>
+                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3">shop</h1>
+                        <h1 onClick={navigateVideo} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs mr-3">about</h1>
+                        <h1 onClick={navigateForms} className="font-spartan cursor-default	hover:text-gray-400 font-bold text-white text-xs">contact</h1>
                     </div>
                 </div>
             : null
@@ -47,7 +47,6 @@ const FirstBlock = () => {
                         <h1 className={`font-spartan text-2xl text-white font-bold mt-3 ml-28 ${isOpen ? 'hidden' : ''}`}>room</h1>
                         </div>
                     </div>
-                    
                 </div>
             </BackgroundImage>
         {/* ----- Deuxieme partie ------*/}
