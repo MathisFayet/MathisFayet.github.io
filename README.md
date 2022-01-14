@@ -18,14 +18,29 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-![](./captureEcran/mobileScreen.png)
-![](./captureEcran/mobileScreen.png)
-![](./captureEcran/mobileScreen.png)
+Capture d'ecran du projet vue desktop :
+
+![](./captureEcran/desktopScreen.png)
+
+Capture d'ecran vue desktop dans le forms :
+
+![](./captureEcran/desktopForms.png)
+
+Capture d'ecran vue desktop dans la video Youtube :
+
+![](./captureEcran/desktopVideo.png)
+
+Capture d'ecran vue mobile 
+
+![](./captureEcran/mobileScreen1.png)
+
+![](./captureEcran/mobileScreen2.png)
+
+![](./captureEcran/mobileScreen3.png)
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://github.com/MathisFayet/MathisFayet.github.io)
 
 ## My process
 
@@ -34,15 +49,27 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - CSS custom properties
-- [Tailwind] - Css library 
+- [Tailwind] - Css framework 
 - [Styled Components](https://styled-components.com/) - For styles
 - Flexbox
 
 ### What I learned
 
-- " 
-    Raconter les exps
-"
+Implementer une video youtube avec React pour effectuer la lecture dans une autre page
+
+```js
+    <>
+      <div className=" justify-center flex mt-24">
+        <ReactPlayer url="https://youtu.be/mgmVOuLgFB0"/>
+      </div>
+      <div className="justify-center flex mt-24">
+        <button onClick={navigateHome} className="shadow text-red-200 hover:text-red-300 font-bold py-2 px-4 rounded" type="button">Go back</button>
+      </div>
+    </>
+```
+
+Faire une ternaire pour quand mon icon est ouverte, cacher mon titre et afficher d'autre élement par-dessus
+
 ```js
     <ContainerImage className="">
             {
@@ -61,13 +88,11 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
             <h1 className={`font-spartan text-2xl text-white font-bold mt-3 ml-28 ${isOpen ? 'hidden' : ''}`}>room</h1>
         </ContainerTitle>
     <ContainerImage>
-
-    Faire un ternaire pour quand mon icon est ouverte, cacher mon titre et afficher d'autre élement par-dessus
 ```
 
 ### Continued development
 
-- Le carousel d'image sur des images de background j'aimerai maîtriser ça, le responsive aussi je donné trés peu d'importance à ce coté auparavant, il est essentiell dans la réalisation d'un site WEB.
+- Le carousel d'image sur des images de background j'aimerai maîtriser ça, le responsive aussi, qui est trés important dans le développement de site internet.
 
 ### Useful resources
 
