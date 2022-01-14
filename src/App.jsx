@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import FirstBlock from "./Compenent/FirstBlock"
-import DisplayVideo from "./Compenent/DisplayVideo"
-import DisplayForms from "./Compenent/DisplayForms"
+import FirstBlock from "./Compenent/FirstBlock/"
+import DisplayVideo from "./Compenent/Videos/"
+import DisplayForms from "./Compenent/Forms/"
 
 const App = () => {
   return (

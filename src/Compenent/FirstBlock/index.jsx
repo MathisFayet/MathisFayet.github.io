@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 
-import hamburgerIcon from "../images/icon-hamburger.svg"
-import arrowIcon from "../images/icon-arrow.svg"
-import SecondBlock from "./SecondBlock"
-import angleRightIcon from "../images/icon-angle-right.svg"
-import angleLeftIcon from "../images/icon-angle-left.svg"
-
-import iphoneImage1 from "../images/mobile-image-hero-1.jpg"
-import iphoneImage2 from "../images/image-about-dark.jpg"
-
-import desktopImage1 from "../images/desktop-image-hero-1.jpg"
+import hamburgerIcon from "../../images/icon-hamburger.svg"
+import arrowIcon from "../../images/icon-arrow.svg"
+import SecondBlock from "../SecondBlock/"
+import angleRightIcon from "../../images/icon-angle-right.svg"
+import angleLeftIcon from "../../images/icon-angle-left.svg"
+import iphoneImage1 from "../../images/mobile-image-hero-1.jpg"
+import desktopImage1 from "../../images/desktop-image-hero-1.jpg"
 
 const HeaderNav = ({navigateVideo, navigateForms}) => (
     <>
@@ -42,7 +39,7 @@ const FirstBlock = () => {
     }
     return (
         <>
-            <ContainerImage className="">
+            <ContainerImage>
                 {
                     isOpen ? <HeaderNav navigateVideo={navigateVideo} navigateForms={navigateForms} /> : null
                 }

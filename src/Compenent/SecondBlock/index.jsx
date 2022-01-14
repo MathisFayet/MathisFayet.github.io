@@ -1,13 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
 
-import iphoneImage2 from "../images/image-about-dark.jpg"
-import iphoneImage3 from "../images/image-about-light.jpg"
+import iphoneImage2 from "../../images/image-about-dark.jpg"
+import iphoneImage3 from "../../images/image-about-light.jpg"
 
 const SecondBlock = () => {
     return (
         <>
-        <ContainerImage className="">
+        <ContainerImage>
         {/* ----- Troisieme partie ------*/}
             <div className="md:w-full">
                 <img className="w-full h-full" src={iphoneImage2}></img>
@@ -38,7 +38,7 @@ const SecondBlock = () => {
 export default SecondBlock;
 
 const ContainerImage = styled.section`
-@media (min-width: 1440px) {
-    display: flex;
-}
+    @media (min-width: 1440px) {
+        display: flex;
+    }
 `;
