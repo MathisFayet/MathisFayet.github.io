@@ -9,18 +9,18 @@ const SecondBlock = () => {
         <>
         <ContainerImage className="">
         {/* ----- Troisieme partie ------*/}
-            <div>
+            <div className="md:w-full">
                 <img className="w-full h-full" src={iphoneImage2}></img>
             </div>
 
         {/* ----- Quatrieme partie ------*/}
-            <div className="m-10">
+            <div className="m-10 md:mt-20 md:px-18 md:w-full">
                 <div className="flex">
                     <h1 className="font-bold uppercase font-spartan text-base mr-3">A b o u t</h1>
                     <h1 className="font-bold uppercase font-spartan text-base mr-3">o u r</h1>
                     <h1 className="font-bold uppercase font-spartan text-base">f u r n i t u r e</h1>
                 </div>
-                <p className="text-gray-300 mt-4 font-sparta font-medium text-base">
+                <p className="text-gray-300 mt-4 font-sparta font-medium text-base md:text-sm">
                     Our multifunctional collection blends design and function to suit your individual taste. Make each
                     room unique, or pick a cohesive theme that best express your interests and what inspires you. Find 
                     the furniture pieces you need, from traditional to contemporary styles or anything in between.
@@ -28,8 +28,8 @@ const SecondBlock = () => {
                 </p>
             </div>
         {/* ----- Cinquieme partie ------*/}
-            <div>
-                <img className="" src={iphoneImage3}></img>
+            <div className="md:w-full">
+                <img className="w-full h-full" src={iphoneImage3}></img>
             </div>
             </ContainerImage>
         </>
